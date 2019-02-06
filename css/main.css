@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css?family=Baumans|Hind+Siliguri');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri';
+}
+
+
+
+/* HEADER */
+
+header{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3em  1fr 1fr;
+    grid-template-rows: 3em 1fr 1fr;
+    background-image: url('../img/louvre-cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header img{
+    width: 80%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+}
+
+header nav{
+    width: 100%;
+    height: 100%;
+    padding: 100px 0 0 0;
+    grid-column: 2/3;
+    grid-row: 3/-1; 
+}
+
+header nav ul{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header nav ul li{
+    width: 400px;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #000;
+    transition: .2s;
+}
+
+header nav ul li:hover{
+    border-bottom: 1px solid orange;
+}
+
+header nav ul li a{
+    font-size: 2em;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #000;
+}
+
+/* MAIN */
+
+/* HOTEL */
+
+#hoteller{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3em 1fr 3em;
+    grid-template-rows: 3em 5em 1fr 3em;
+    background-color: rgb(32, 32, 36);
+}
+
+#hoteller h1{
+    width: 300px;
+    height: 70%;
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.881);
+    border-bottom: 1px solid #ffff;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#hoteller .content{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 6em;
+}
+
+.content .hotel{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 1fr .5fr 1fr .5fr 2fr .5fr;
+}
+
+.hotel img{
+    width: 100%;
+    object-fit: cover;
+    grid-column: 1/-1;
+    grid-row: 1/4;
+    border-radius: 3px 3px 0 0;
+}
+
+.hotel h2{
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.733);
+    padding-top: 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+
+.hotel p{
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.stars{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.fas.fa-star{
+    color: orange;
+    font-size: 20px;
+}
+
+.hotel p{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    letter-spacing: 1px;
+}
+
+.hotel p span{
+    display: block;
+    width: 70%;
+    font-size: 18px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.hotel a{
+    height: 30px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 2/3;
+    grid-row: 6/-1;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding-top: 4px;
+    transition: .3s;
+}
+
+.hotel a:hover{
+    background-color: rgba(255, 166, 0, 0.562);
+    color: #ffff;
+}
+
+/* EVENTS */
+
+#events{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3em 1fr 3em;
+    grid-template-rows: 3em 5em 1fr 3em;
+    background-color: rgb(32, 32, 36)
+}
+
+#events h1{
+    width: 300px;
+    height: 70%;
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.881);
+    border-bottom: 1px solid #ffff;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#events .content{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 6em;
+}
+
+.content .event{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 1fr .5fr 1fr .5fr 2fr .5fr;
+}
+
+.event img{
+    width: 100%;
+    object-fit: cover;
+    grid-column: 1/-1;
+    grid-row: 1/4;
+    border-radius: 3px 3px 0 0;
+}
+
+.event h2{
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.733);
+    padding-top: 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.event p{
+    grid-column: 1/-1;
+    grid-row: 2/4;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.event p{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    letter-spacing: 1px;
+}
+
+.event p span{
+    display: block;
+    width: 70%;
+    font-size: 18px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.event a{
+    height: 30px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 2/3;
+    grid-row: 6/-1;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding-top: 4px;
+    transition: .3s;
+}
+
+.event a:hover{
+    background-color: rgba(255, 166, 0, 0.562);
+    color: #ffff;
+}
+
+.event i{
+    font-size: 25px;
+    color: orange;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.agelimit{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    width: 40px;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+.agelimit p{
+    border: 2px solid orange;
+    border-radius: 100px;
+    font-size: 15px;
+    color: orange;
+    font-weight: bold;
+    padding-top: 3px;
+    height: 35px;
+}
+
+/* PAKKEREJSER */
+
+#pakkerejser{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(32, 32, 36);
+    display: grid;
+    grid-template-columns: 3em 1fr 3em;
+    grid-template-rows: 3em 5em 1fr 3em;
+}
+
+#pakkerejser h1{
+    width: 500px;
+    height: 70%;
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.881);
+    border-bottom: 1px solid #ffff;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.content3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) .5fr;
+    grid-template-rows: .5fr 1px 1fr 1px 1fr;
+    grid-gap: 20px;
+}
+
+.content3 figure{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content3 figure:hover{
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+.content3 figure img{
+   width: 100%;
+   border-radius: 5px;
+   object-fit: cover
+}
+
+/* .content3 figure figcaption{
+    width: 60%;
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: #ffff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.content3 figure figcaption:hover{
+    background-color: rgba(255, 166, 0, 0.315);
+} */
+
+.content3 h3{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    line-height: 200px;
+    color: #ffff;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.content3 p{
+    color: #ffff;
+    font-size: 20px;
+    margin: 40px auto;
+    text-align: center;
+    height: 100px;
+    width: 120px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding-top: 5px;
+    transition: .2s;
+    background-color: rgba(255, 255, 255, 0.116)
+}
+
+.content3 p:hover{
+    background-color: rgba(255, 166, 0, 0.315);
+}
+
+.content3 p span{
+    display: block;
+    font-size: 60px;
+}
+
+.line{
+    width: 90%;
+    grid-column: 1/-1;
+    background-color: #ffff;
+}
+
+.content3 button{
+    grid-column: 3/4;
+    width: 200px;
+    height: 40px;
+    margin: 15px auto;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid orange;
+    background-color: rgba(255, 255, 255, 0.116);
+    color: #ffff;
+    transition: .3s;
+}
+
+.content3 button:hover{
+    background-color: rgba(255, 166, 0, 0.315);
+}
+
+/* FOOTER */
+
+footer{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 250px 150px 100px;
+}
+
+footer img.footer-logo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 50%;
+    z-index: 100;
+    padding: 20px;
+}
+
+footer img.footer-img{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    height: 100%;
+}
+
+footer nav{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-top: 20px;
+}
+
+footer nav ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+footer .social{
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+footer .social img{
+    width: 40px;
+}
+
+footer address{
+    grid-column: 2/3;
+    grid-row: 3/-1;
+    text-align: center;
+}
+
+footer form{
+    grid-column: 3/-1;
+    grid-row: 1/-1;
+    margin: 30px auto;
+    padding-left: 200px;
+}
+
+footer input{
+    display: block;
+    width: 400px;
+    height: 25px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    background-color: rgb(241, 238, 238);
+    padding-left: 10px;
+}
+
+footer form input:nth-of-type(3){
+    height: 200px;
+}
+
+footer form input:last-of-type{
+    width: 100px;
+    transition: .1s;
+}
+
+footer form input:last-of-type:hover{
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.336);
+    color: #ffff;
+}
